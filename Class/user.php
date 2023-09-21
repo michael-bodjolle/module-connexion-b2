@@ -12,7 +12,7 @@ class User extends Database{
     public function __construct($bdd)
     {
         // $this->bdd = $bdd; 
-        $this->bdd = new PDO("mysql:host=localhost;dbname=moduleconnexionb2","root", "root");
+        $this->bdd = new PDO("mysql:host=localhost;dbname=moduleconnexionb2","root", "");
         $this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //    return $this->bdd;
     }
